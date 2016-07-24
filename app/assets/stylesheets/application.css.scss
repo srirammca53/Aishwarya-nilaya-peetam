@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: gray;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #5499c7;
+}
+
+  .navbar-default {
+    background-color: #5499c7;
+    border-color: #030033;
+}
+
+  .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    color: white;
+   text-decoration: none;
+  background-color: #66CCFF;  /*change color of links in drop down here*/
+   }
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+    }

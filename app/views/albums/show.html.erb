@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @album.title %>
+</p>
+
+<p>
+  <% @album.images.each do |i| %>
+    <%= link_to attachment_image_tag(i, :file, :fill, 350, 350, format: "jpg" , class:"img-responsive" ), show_images_album_path(i) %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>
